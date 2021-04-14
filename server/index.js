@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-// Handle production
+//Handle production
 if (process.env.ENV === 'production') {
     app.use(express.static(__dirname + '/public/'));
 
